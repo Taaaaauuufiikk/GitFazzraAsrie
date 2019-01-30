@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout_id"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.pljc_pc.project01.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodata"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan isi data anda dengan baik dan benar sesuai dengan kartu identitas" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:id="@+id/etNama" />
+
+    <EditText
+        android:inputType="textImeMultiLine"
+        android:lines="3"
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:id="@+id/etAlamat" />
+
+    <EditText
+        android:inputType="textImeMultiLine"
+        android:lines="3"
+        android:layout_gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tempat Lahir"
+        android:id="@+id/etTempat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Lahir"
+            android:inputType="date"
+            android:layout_weight="1"
+            android:id="@+id/etTanggal" />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/jenis_kelamin"
+            android:id="@+id/spJKelamin">
+        </Spinner>
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telepon"
+        android:id="@+id/etPhone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_weight="1"
+            android:id="@+id/btTambah"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ulangi"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/btUlangi"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/btBatal"/>
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
